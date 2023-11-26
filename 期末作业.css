@@ -1,0 +1,575 @@
+body{
+	width: 2000px;
+	height: 120vh;
+}
+.ttt{
+	width: 1150px;
+	height: 120vh;
+	background: white;/*大盒子*/
+}
+/*--------------------------------------------------------------------------------*/
+.zhoulin-top {
+	width:100% ;
+	height: 37px;
+	background: burlywood;
+}
+.zhoulin-top .zhoulin-top1{
+	width: 1150px;
+	height: 30px;
+	margin: 0 auto;
+/*	background: bisque;*/
+       /* border: palevioletred 3px solid;*/
+        background-size: cover;
+}
+.zhoulin-top .zhoulin-top1 .zhoulin-left{
+	float: left;
+	position: relative;
+	top: -16px;
+	}
+.zhoulin-top .zhoulin-top1 .zhoulin-right{
+	float: right;
+	position: relative;
+	top: -16px;
+	left: -79px;
+}
+ .zhoulin-top li{
+ 	list-style: none;
+	display: inline;
+	float: left;/*字体左浮动*/
+	color: white;/*字体颜色*/
+	font-size: 15px;/*字体大小*/
+	line-height: 70px;/*线高,使文字居中*/
+	padding: 0 5px;/*设置字体间距*/
+	
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	
+}
+.zhoulin-top .zhoulin-top1 li:hover {
+	background:blueviolet;
+	color: white;
+
+	
+}
+.zhoulin-top .zhoulin-zhong-1{
+	width: 1150px;
+	height: 200px;
+}
+/*--------------------------------------------------------------------*/
+.shousuo1 {
+	display: flex;
+	width: 400px;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	top: -34px;
+	left: 99px;
+	
+}
+.shousuo .shousuo1 input {
+	flex: 1;/*自动对起*/
+	height: 30px;
+	line-height: 30px;/*行高*/
+	box-sizing: border-box;/*边款不占高度*/
+	outline: none;/*去除内外边框黑线*/
+	border: none;/*去除外边框黑线*/
+	border-top-left-radius:25px;
+	border-bottom-left-radius:25px;
+	padding: 0 20px;
+	transition: all .3s;
+	
+}
+.shousuo .shousuo1 button {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 30px;
+	border: none;
+	box-sizing: border-box;
+	background-color: #7FFF00;
+	font-size: 20px;
+	color: white;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	transition: all .3s;
+}
+.shousuo .shousuo1 input:focus{
+	box-shadow: 0 0 10px #8A2BE2;
+}
+.shousuo .shousuo1 button:focus{
+	box-shadow: 0 0 10px #8A2BE2;
+}
+/*------------------------------文本内容----------------------------------------------*/
+.wenben{
+	width: 1150px;
+	height: 120px;
+	background:red;
+	position: relative;
+	top: -50px;
+}
+.wenben1{
+	width: 1150px;
+	height: 120px;
+	background:bisque;
+	float: left;
+}
+.wenben1 .one{
+	position: relative;
+	top: 29px;
+	left: 54px;
+	float: left;
+}
+.wenben1 .two{
+	width: 919px;
+	position: relative;
+	left: 128px;
+	top: 13px;
+	float: left;
+}
+.wenben1 .one li button{
+
+	height: 60px;
+	width: 60px;
+	border-bottom-left-radius:25px ;
+	border-top-left-radius:25px ;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	border: none;
+	box-sizing: border-box;
+	background-color: orange;
+	font-size: 15px;
+	color: white;
+	transition: all .3s;
+}
+.wenben1 .one li button:focus{
+	box-shadow: 0 0 10px #00FA9A;
+}
+.wenben1 .two li button{
+	height: 40px;
+	line-height: 10px;
+	padding: 0 15px;/*调左右间距*/
+	margin-bottom: 10px;/*调上下间距*/
+/*	margin-top: 5px;*/
+	border: none;
+	box-sizing: border-box;
+	background-color: orange;
+	font-size: 20px;
+	color: white;
+	border-bottom-left-radius:10px ;
+	border-top-left-radius:10px ;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	transition: all .3s;
+}
+.wenben1 .two li button:focus{
+	box-shadow: 0 0 10px #00FA9A;
+}
+
+/*.wenben2{
+	width: 575px;
+	height: 400px;
+	background:greenyellow;
+	float: left;
+}*/
+.wenben1 li{
+	list-style: none;
+	float: left;
+	padding: 0 2px;
+}
+/*-----------------------------------轮播图---------------------------------------------*/
+.carousel_map {
+	width: 1150px;
+	height: 400px;
+	position: relative;
+	top: -50px;
+}
+
+.slide {
+	width: inherit;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+}
+
+/* 鼠标放上去显示按钮 */
+.slide:hover .labels {
+	display: flex;
+}
+
+.slide:hover .list {
+	animation: none;
+}
+
+.slide input {
+	display: none;
+}
+
+/* 按钮位置 */
+.labels {
+	position: absolute;
+	bottom: 0.5em;
+	z-index: 1;
+	width: inherit;
+	justify-content: center;
+	display: none;	/* 鼠标移开隐藏按钮 */
+}
+
+/* 按钮样式 */
+.labels label {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	margin: 0 0.3rem;
+	border: 0.1rem solid #fff;
+	background-color: transparent;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+/* 选择哪个按钮就有被点击的效果 */
+.slide input[id=pic1]:checked ~ .labels label[for=pic1],
+.slide input[id=pic2]:checked ~ .labels label[for=pic2],
+.slide input[id=pic3]:checked ~ .labels label[for=pic3],
+.slide input[id=pic4]:checked ~ .labels label[for=pic4] {
+	background-color: #fff;
+	border: 0.1rem solid #fff;
+}
+/* 按钮控件选择图片 */
+.slide input[id=pic1]:checked ~ .list {
+	transform: translate(calc(0 * 1150px));
+}
+.slide input[id=pic2]:checked ~ .list {
+	transform: translate(calc(-1 * 1150px));
+}	
+.slide input[id=pic3]:checked ~ .list {
+	transform: translate(calc(-2 * 1150px));
+}
+.slide input[id=pic4]:checked ~ .list {
+	transform: translate(calc(-3 * 1150px));
+}
+
+.carousel_map .slide ul {
+	list-style: none;
+}
+
+.list {
+	width: calc(5 * 1150px);
+	height: inherit;
+	position: relative;
+	
+	/* 设置动画效果 */
+	animation: move 15s ease 1s infinite;
+}
+
+/* 动画关键帧轮播 */
+@keyframes move {
+	0% {
+		transform: translate(calc(0 * 1150px));
+	}
+	25% {
+		transform: translate(calc(-1 * 1150px));
+	}
+	50% {
+		transform: translate(calc(-2 * 1150px));
+	}
+	75% {
+		transform: translate(calc(-3 * 1150px));
+	}
+	100% {
+		transform: translate(calc(-4 * 1150px));
+	}
+}
+
+.item {
+	width: 1150px;
+	height: 400px;
+	float: left;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.carousel_map {
+	width:1150px;
+	height: 400px;
+}
+
+.slide {
+	width: inherit;
+	height: inherit;
+}
+.carousel_map .slide ul {
+	list-style: none;
+}
+
+.list {
+	width: calc(4 * 1150px);
+	height: inherit;
+	position: relative;
+}
+
+.item {
+	width: 1150px;
+	height: 400px;
+	float: left;
+}
+.slide {
+	width: inherit;
+	height: inherit;
+
+	/* 新增 */
+	overflow: hidden;
+	position: relative;
+}
+
+.list {
+	/* 多加了一张图的宽度 */
+	width: calc(5 * 1150px);
+	height: inherit;
+	position: relative;
+	
+	/* 设置动画效果 */
+	animation: move 15s ease 1s infinite;
+}
+
+/* 动画关键帧轮播 */
+@keyframes move {
+	0% {
+		transform: translate(calc(0 * 1150px));
+	}
+	25% {
+		transform: translate(calc(-1 * 1150px));
+	}
+	50% {
+		transform: translate(calc(-2 * 1150px));
+	}
+	75% {
+		transform: translate(calc(-3 * 1150px));
+	}
+	100% {
+		transform: translate(calc(-4 * 1150px));
+	}
+}
+/* 鼠标经过轮播图区域停止动画 */
+.slide:hover .list {
+	animation: none;
+}
+
+/* 鼠标放上去显示按钮 */
+.slide:hover .labels {
+	display: flex;
+}
+
+/* 将单选按钮隐藏 */
+.slide input {
+	display: none;
+}
+
+/* 制作的小圆点按钮 */
+/* 按钮位置 */
+.labels {
+	position: absolute;
+	bottom: 0.5em;
+	z-index: 1;
+	width: inherit;
+	justify-content: center;
+	display: none;	/* 鼠标移开隐藏按钮 */
+}
+
+/* 按钮样式 */
+.labels label {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	margin: 0 0.3rem;
+	border: 0.1rem solid #fff;
+	background-color: transparent;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+/* 选择哪个按钮就有被点击的效果 */
+.slide input[id=pic1]:checked ~ .labels label[for=pic1],
+.slide input[id=pic2]:checked ~ .labels label[for=pic2],
+.slide input[id=pic3]:checked ~ .labels label[for=pic3],
+.slide input[id=pic4]:checked ~ .labels label[for=pic4] {
+	background-color: #fff;
+	border: 0.1rem solid #fff;
+}
+/* 按钮控件选择图片 */
+.slide input[id=pic1]:checked ~ .list {
+	transform: translate(calc(0 * 1150px));
+}
+.slide input[id=pic2]:checked ~ .list {
+	transform: translate(calc(-1 * 1150px));
+}	
+.slide input[id=pic3]:checked ~ .list {
+	transform: translate(calc(-2 * 1150px));
+}
+.slide input[id=pic4]:checked ~ .list {
+	transform: translate(calc(-3 * 1150px));
+}
+/*------------------------------------文字内容------------------------------------------*/
+.container{
+	widows: 1150px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+img{
+	width: 322px;
+	height: 123px;
+}
+.contentbox{
+	width: 375px;
+	height: 200px;
+	margin: 20px;
+	position: relative;
+	display: inline-block;
+	box-shadow: 5px 5px 10px 0px lightgray; 
+	border-radius:10px ;
+	transition: 0.3s;.
+}
+.contentbox h2{
+	color: black;
+	margin: 20px;
+	
+}
+.contentbox p{
+	color: black;
+	margin: 20px;
+}
+.contentbox h2::after{
+	content: '';
+	background: lightseagreen;
+	width: 80px;
+	height: 4px;
+	position: absolute;
+	left: 5%;
+	bottom: 140px;
+}
+.contentbox:hover{
+	scale:0.7;
+	box-shadow: none;
+}
+/*-------------------------------------合作加盟----------------------------------------------*/
+.hezuo{
+	width: 1150px;
+	height: 200px;
+	background: #DDDDDD;
+}
+.hezuo1{
+	position: relative;
+	top: 28px;
+	width: 383px;
+	height: 200px;
+}
+.hezuo .hezuo1 h3{
+	position: relative;
+	top: -20px;
+	left: 5px;
+}
+.hezuo .hezuo1 .hezuo-left{
+	position: relative;
+	top: -27px;
+	left: -3px;
+	float: left;
+}
+.hezuo .hezuo1 .hezuo-right{
+	position: relative;
+	top: -27px;
+	left: -42px;
+	float: left;
+	
+}
+.hezuo .hezuo1 li{
+	line-height: 15px;
+	padding: 10px;
+	list-style: none;
+}
+/*------------------------------------------------------*/
+.fengexian ul li{
+	list-style: none;
+	position: relative;
+	top: -184px;
+	left: 287px;
+}
+/*-----------------------------------------------------*/
+.guanyu{
+position: relative;
+top: -314px;
+left: 338px;
+
+}
+.guanyu .guanyu-left h3{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+.guanyu-left1 ul li{
+	list-style: none;
+	position: relative;
+	top: -3px;
+	left: 1px;
+}
+.guanyu-left2 ul li{
+	list-style: none;
+	position: relative;
+	top: -129px;
+	left: 89px;
+}
+.guanyu-center{
+	position: relative;
+	top: -267px;
+	left: 228px;
+}
+.guanyu-center ul li{
+	list-style: none;
+}
+.guanyu-right{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	top: -383px;
+	left: 620px;
+}
+.guanyu-right img{
+	width: 100%;
+	height: 100%;
+}
+/*-----------------------------------------底部样式-----------------------------------------*/
+
+.dibu1 {
+	position: relative;
+	left: -177px;
+	width: 1150px;
+	height: 150px;
+	background-color: darkgray;
+}
+.dibu2{
+	width: 1150px;
+	height: 150px;
+	background-color: darkgray;
+	position: relative;
+	left: 176px;
+}
+.dibu2 p{
+	
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 10px;
+}
+.dibu1 .dibu3 {
+	width: 200px;
+	height: 150px;
+	border: #8A2BE2;
+	background:darkgray ;
+	position: relative;
+	top: -149px;
+	left: 153px;
+	
+}
+.dibu1 .dibu3 img{
+	width: 300px;
+	height: 150px;
+}
